@@ -1,0 +1,14 @@
+from random import randint
+
+def adivina():
+    numerito = randint(1, 10)
+
+    for _ in range(3):
+        adivinas = int(input("adivina el número entre el 1 y el 10: "))
+        if adivinas == numerito:
+            print("felicidades! adivinaste el número!")
+            break
+    else:
+        print(f":(, no adivinaste, el número era {numerito}.")
+
+adivina()
